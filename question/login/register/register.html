@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ユーザー登録desu</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+        form{
+            width: 263px;
+            margin: auto;
+            text-align: right;
+        }
+        input:nth-child(n+2){
+            margin-top: 1em;
+        }
+        input[type="submit"]{
+            border-radius: 4px;
+            border: none;
+            box-shadow: 0 0 4px 1px black;
+        }
+    </style>
+</head>
+<body>
+    <h3>パスワードと名前を入力してください</h2>
+    <form>
+        <span>名前</span>
+        <input type="text" name="user_name" required maxlength="50"><br>
+        <span>パスワード</span>
+        <input type="password" name="user_password" required minlength="4" maxlength="4" autocomplete="new-password"><br>
+        <input type="submit" value="登録">
+    </form>
+    <script>
+        const form=document.querySelector("form");
+        form.addEventListener("submit" , register,this);
+        async function register(e){
+            e.preventDefault();
+            const name=form.querySelector("[name='user_name']");
+            const password=form.querySelector("[name='user_password']");
+            const data=new FormData();
+            data.append("name" , name.value);
+            data.append("password" , password.value);
+            const response=await (await fetch("../../add/data.php?action=register",{method:"POST",body:data})).json();
+            if(!response){
+                alert("すでに同じ名前のアカウントが存在します。別の名前を入力してください");
+                name.value="";
+                name.focus();
+            }else{
+                document.location.href="../../question.html";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+div{
+    box-shadow: 0 0 5px 2px black;
+    width: 320px;
+    margin: 32px auto;
+    border-radius: 6px;
+    padding: 7px;
+}
+div form span{
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+form input[type="text"] , input[type="password"]{
+    border-radius: 4px;
+    margin-top: 10px;
+}
+form input[type="submit"]{
+    float: right;
+    margin-top: 1em;
+    margin-right: 4em;
+}
+div a#register{
+    display: inline-block;
+    margin-top: 7em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
