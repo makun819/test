@@ -1,0 +1,144 @@
+*{
+    padding:0
+}
+main{
+    margin: 10em auto;
+    width: 960px;
+    height: 660px;
+    position: relative;
+}
+section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* play */
+dialog{
+    transform: translateY(-14em);
+    border: none;
+    font-size: 2em;
+}
+section#play{
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to right,#c70000,#d28300,#dfd000,#00873c,#005aa0,#181878,#800073);
+}
+#total_timer{
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    height: 13%;
+    line-height: 2em;
+}
+#input_display{
+    width: 80%;
+    height: 75%;
+    margin: auto;
+    display: block;
+    resize: none;
+    font-size: 18px;
+    pointer-events: none;
+    font-family: none;
+    padding: 3px;
+    background: white;
+}
+#input_display span{
+    font-size: 2.3em;
+}
+#input_display span.input_wait{
+    opacity:0.4;
+}
+#input_display span.input{
+    opacity:1;
+}
+textarea{
+    pointer-events: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+#frame_timer{
+    width: 81%;
+    background: white;
+    margin: auto;
+    height: 10%;
+}
+#parameter{
+    height: 100%;
+    width: 0;
+    background-color: black;
+}
+/* result */
+#result_display{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    box-shadow: 0 0 5px 1px black;
+    border-radius: 12px;
+}
+#result_display > p{
+    background-image: url(../../img/result.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 80%;
+    height: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#result_display ul{
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+#result_display li{
+    width: 34%;
+    text-align: center;
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#result_display li:nth-child(-n+2){
+    border-right: 1px dashed black;
+}
+#result_display li p {
+    color: black;
+    font-size: 2em;
+}
+#result_display #btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#result_display #btn button{
+    background: #eb9a06;
+    border: none;
+    box-shadow: 0 0 2px 1px black;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #565656;
+    width: 14em;
+    height: 3em;
+    margin: auto;
+    font-size: 1.1em;
+}
+#result_display #btn #restart_btn{
+    background: #f56c37;
+}
+/* ranking */
+table{
+    width: 100%;
+    table-layout: fixed;
+    font-size: 3em;
+}
+td{
+    text-align: center;
+}
+.that{
+    background-color: red;
+}

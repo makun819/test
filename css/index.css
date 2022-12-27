@@ -1,0 +1,309 @@
+*{
+    padding:0;
+}
+.invisible{
+    opacity:0.1;
+}
+dialog{
+    position: fixed;
+    top: 0;
+    width: 350px;
+    border: 1px solid red;
+    color: red;
+    padding: 4px;
+    border-radius: 12px;
+}
+header , main{
+    width: 359px;
+    margin:8px auto;
+}
+header{
+    margin-bottom: 10px;
+    height: 50px;
+    overflow: hidden;
+    background: #e6f5f5;
+    border-radius: 6px;
+}
+header ul{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+header ul li{
+    background: white;
+    width: 30%;
+    white-space: nowrap;
+    font-size: 12px;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+/* main */
+section{
+    padding: 0 6px 8px 6px;
+    border: 1px solid black;
+    border-radius: 14px;
+    margin-top: 3em;
+    position: relative;
+}
+section h1{
+    text-align: center;
+    margin: 7px 0 0 0;
+    position: relative;
+}
+/* question */
+#question p{
+    text-shadow: 0.5px -0.8px #9d9d9d;
+}
+section#question div{
+    background: #f1f1f1;
+    padding: 0 9px;
+    border-radius: 10px;
+}
+h5{
+    position: relative;
+    height: 100px;
+    box-shadow: 0 0 4px 0px black;
+}
+h5::before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    position: absolute;
+    opacity: 0.3;
+}
+#basic_information h5::before{
+    background-image: url("../img/engineer1.png");
+}
+#programing_teminology h5::before{
+    background-image: url("../img/engineer2.png");
+}
+#programing_code h5::before{
+    background-image: url("../img/engineer3.png");
+}
+#basic_information h5::after{
+    content:"基本情報技術者試験は、IT エンジニアに必要な基礎の範囲を国家が定めた試験です。 それゆえ、この試験に合格すれば、ITの基礎が備わっていることの証明になるので、ITエンジニアとしてキャリアをスタートさせるのなら、最初に取っておきたい資格です。";
+}
+#programing_teminology h5::after{
+    content:"プログラミングをやっていくうえでよく出てくる用語の意味を理解することで開発速度を上げる";
+}
+#programing_code h5::after{
+    content:"他者が書いたプログラムコードを読み解くことでより理解を深めていく";
+}
+h5::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+div a{
+    text-decoration: none;
+    display: inline-block;
+}
+div a:hover{
+    transform: scaleY(1.5);
+}
+/* プロフィール */
+section#profile{
+    position: relative;
+}
+#profile #profile_image{
+    background-image: url(../img/profile.png);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    top: 7px;
+}
+#profile p{
+    margin-top: 22px;
+}
+/* スキル */
+#skill h1::before{
+    content: "";
+    background-image: url(../img/small_light.png);
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    background-size: cover;
+    left: 4em;
+    bottom: 0.2em;
+}
+#skill div{
+    background: #c7c7c7;
+    padding: 0px 5px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 5px 1px black;
+}
+#skill h3{
+    text-align: center;
+    padding-top: 6px;
+}
+#skill table{
+    width: 100%;
+    table-layout: fixed;
+}
+#skill table td{
+    text-align: center;
+}
+/* タイピングゲーム */
+section#typing_game *{
+    position: relative;
+}
+section#typing_game::before{
+    content: "";
+    background-image: url(../img/keybord.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+}
+#typing_game a , #memo a{
+    display: inline-block;
+    transform: translateX(-50%);
+    left: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 11px;
+    box-shadow: 0 0 4px 1px black;
+}
+#typing_game a:hover , #memo a:hover{
+    transform: translateX(-50%) scale(1.1);
+}
+/* メモ */
+section#memo h1::before{
+    content:"";
+    background-image: url(../img/memo.png);
+    width:36px;
+    height: 36px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 3em;
+    bottom: 1px;
+}
+#memo a{
+    position: relative;
+}
+
+@media screen and (min-width:480px) {
+    header , main{
+        width: 960px;
+    }
+    header{
+        height: auto;
+    }
+    header ul{
+        height: 120px;
+    }
+    header li{
+        border-radius: 10px;
+        font-size: 1.5em;
+    }
+    header li a{
+        font-size: 2em;
+    }
+    section{
+        padding: 0 1em 2.5em 1em;
+    }
+    section h1{
+        font-size:3em;
+        width: 100%;
+        margin: 0.5em 0;
+    }
+    #profile #profile_image{
+        width: 6em;
+        height: 6em;
+        left: 3em;
+        top: 1em;
+    }
+    #profile p{
+        margin-top: 3em;
+        font-size: 1.5em;
+    }
+    /* skill */
+    #skill , #question{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #skill h1::before{
+        left: 6em;
+        width: 1.6em;
+        height: 1.6em;
+    }
+    #skill div{
+        padding: 16px 5px;
+        width: 47%;
+        margin: 12px auto;
+    }
+    #skill h3{
+        font-size: 2em;
+    }
+    #skill p{
+        font-size: 1.5em;
+        height: 150px;
+    }
+    #skill table{
+        font-size: 1.7em;
+    }
+    /* typing_game */
+    #typing_game p{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    #typing_game a{
+        font-size: 2em;
+        width: 7em;
+        text-align: center;
+    }
+    /* question */
+    #question p{
+        font-size: 2em;
+    }
+    #question div{
+        width: 47%;
+        display: inline-block;
+        margin: 12px auto;
+    }
+    #question h5{
+        height: 20em;
+    }
+    #question h5::after{
+        font-size: 1.6em;
+    }
+    #question div a{
+        font-size: 2em;
+    }
+    /* memo */
+    section#memo h1::before{
+        width: 2em;
+        height: 2em;
+        bottom: 0;
+        left: 5em;
+    }
+    #memo p{
+        font-size: 2em;
+    }
+    #memo a{
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>自己紹介</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#profile">プロフィール</a></li>
+            <li><a href="#skill">スキル</a></li>
+            <li><a href="#typing_game">タイピングゲーム</a></li>
+            <li><a href="#question">問題集</a></li>
+            <li><a href="#memo">メモアプリ</a></li>
+            <li><a href="">問い合わせ</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="profile">
+            <h1>☆PROFILE☆</h1>
+            <div id="profile_image"></div>
+            <p>始めまして。<br>平成8年生まれの26歳エンジニアのタカノと申します。社会人歴は8年目です。新卒で入った会社は営業（個人営業）の仕事で、約5年間勤務していました。その後もともと興味のあったエンジニアに挑戦したいと思い、IT業界に入社すべく絶賛就職活動中でございます。勉強歴や資格などは<a href="#skill">リンク</a>からご覧ください。よろしくお願いいたします。</p>
+        </section>
+        <section id="skill">
+            <h1>SKILL</h1>
+            <div>
+                <h3>デザイン・コーディング</h3>
+                <p>基本的なことは一通りできます。CSSはbootstrapを勉強中です。主にSCSSに記述しています。</p>
+                <table>
+                    <tr><th>言語</th><th>経験年数</th><th>スキル</th></tr>
+                    <tr><td>HTML5</td><td>6ヵ月</td><td>★★★★☆</td></tr>
+                    <tr><td>CSS</td><td>5ヵ月</td><td>★★☆☆☆</td></tr>
+                </table>
+            </div>
+            <div>
+                <h3>フロントエンド</h3>
+                <p>javascriptはすごく好きな言語でよく勉強しています。フレームワークはview.jsとjQueryを少し触れる程度で現在はReactを中心に勉強しています。</p>
+                <table>
+                    <tr><th>言語</th><th>経験年数</th><th>スキル</th></tr>
+                    <tr><td>Javascript</td><td>4ヵ月</td><td>★★★★★</td></tr>
+                    <tr><td>jQuery</td><td>4ヵ月</td><td>★★★☆☆</td></tr>
+                    <tr><td>View</td><td>1ヵ月</td><td>★★☆☆☆</td></tr>
+                    <tr><td>React</td><td>1ヵ月</td><td>★★☆☆☆</td></tr>
+                </table>
+            </div>
+            <div>
+                <h3>バックエンド</h3>
+                <p>バックエンドは最近触り始めました。主にPHPを中心にJAVAを少々といった感じで勉強しています。一応JavaはJavaSilverという資格をとっています。</p>
+                <table>
+                    <tr><th>言語</th><th>経験年数</th><th>スキル</th></tr>
+                    <tr><td>PHP</td><td>3ヵ月</td><td>★★★☆☆</td></tr>
+                    <tr><td>Java</td><td>4ヵ月</td><td>★★☆☆☆</td></tr>
+                </table>
+            </div>
+            <div>
+                <h3>DB</h3>
+                <p>DBはMySQLを使って勉強しています。基本的なsql文は網羅していると思います。</p>
+                <table>
+                    <tr><th>言語</th><th>経験年数</th><th>スキル</th></tr>
+                    <tr><td>MySQL</td><td>3ヵ月</td><td>★★★★☆</td></tr>
+                </table>
+            </div>
+            <div>
+                <h3>資格</h3>
+                <p>Java silverの取得後はしばらく事情により勉強できない期間が出来たため、実質の勉強期間は上の経験年数の期間となっています。</p>
+                <table>
+                    <tr><th>資格</th><th>取得年月日</th></tr>
+                    <tr><td>オラクル　JavaSilver</td><td>2021年5月21日</td></tr>
+                </table>
+            </div>
+        </section>
+        <section id="typing_game">
+            <h1>タイピングゲーム</h1>
+            <p>このゲームはjavascriptを使って寿司打というタイピングゲームを真似て作ってみました。所々アイデアに詰まってぎこちない箇所があります。<br>尚、こちらはパソコンのみプレイできるゲームになっています。</p>
+            <a href="typing/typing.html">プレイする</a>
+        </section>
+        <section id="question">
+            <h1 class="title">問題集</h1>
+            <p>こちらのコンテンツはデータベース(MySQL)に保存した内容を問題形式にして出題しています。サーバー言語はPHPを使用しています。</p>
+            <div id="basic_information">
+                <h2>基本情報技術者の問題集</h2>
+                <h5></h5>
+                <a href="./question/question.html?question=basic_info">問題を解いてみる</a>
+            </div>
+            <div id="programing_teminology">
+                <h2>プログラミングの用語問題集</h2>
+                <h5></h5>
+                <a href="./question/question.html?question=teminology">問題を解いてみる</a>
+            </div>
+            <div id="programing_code">
+                <h2>プログラミングのコードを読み解く問題集</h2>
+                <h5></h5>
+                <a href="./question/question.html?question=code">問題を解いてみる</a>
+            </div>
+        </section>
+        <section id="memo">
+            <h1>メモアプリ</h1>
+            <p>このアプリは学習のメモ用に作ったアプリです。分からないところは自分で深堀して調べながら学習やモノづくりをしています。もう一度調べなくても大丈夫なようにメモの中に自分の言葉で記録しています。これでかなり時間を節約できてるような気がします。</p>
+            <a href="">メモアプリへGo!!</a>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>

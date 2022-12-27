@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/typing.css">
+    <title>タイピングゲーム</title>
+</head>
+<body>
+    <main>
+        <section id="play">
+            <div id="total_timer"></div>
+            <textarea></textarea>
+            <div id="input_display"></div>       
+            <div id="frame_timer"><div id="parameter"></div></div>
+        </section>
+        <section id="result_display" style="display:none">
+            <p></p>
+            <ul>
+                <li>正しく打ったキーの数<p id="right_type"></p></li>
+                <li>平均キータイプ数<p id="second_type"></p></li>
+                <li>ミスタイプ数<p id="miss_type"></p></li>
+            </ul>
+            <div id="btn">
+                <button id="ranking_btn">ランキングを表示する</button>
+                <button id="restart_btn">もう一度挑戦する</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/typing.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
